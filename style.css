@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(546441.jpg);
+}
+.navbar{
+    background-color: black;
+}
+.navbar ul{
+    overflow: auto;
+    margin-left: 40px;
+}
+
+.navbar li{
+    float: left;
+    list-style:none;
+    margin: 25px 25px;
+}
+.navbar li a{
+    padding:5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Nunito",sans-serif;
+}
+.navbar .fa{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search{
+    float: left;
+    color: white;
+    padding: 12px 50px;
+}
+input{
+    padding-left: 20px;
+    width:730px;
+    height: 50px;
+    margin-right:0px;
+    font-size: 1.4rem;
+    color: lightgrey;
+   
+}
+#bor{
+    background-color: #ffb900;
+    height:48px;
+    width:50px;
+    float: right;
+    color: black;
+    margin-top: 1px;
+}
+img{
+    float: left;
+    padding :20px;
+    height:60%;
+}
+.sub-menu{
+    display: none;
+}
+ 
+.navbar ul li:hover .sub-menu{ 
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul:hover .sub-menu ul{ 
+    display: block;
+    margin: 10px;
+    width:400px;
+    height: 650px;
+    background: transparent;
+}
+button{
+    background-color: black;
+    height:22px;
+    color: white;
+    font-size: 22px;
+    border:0;
+}
+.navbar ul:hover .sub-menu li a{ 
+    color: black;
+}
+.fa-angle-right{
+    float: right;
+}
+h1{
+    padding-left: 20px;
+    color: black;
+}
+
+.navbar ul li:hover .sub-menu li a:hover{
+    color: #1a6069;
+    background-color: #cbf6fc;
+}
+.sub-menu2{
+    display: none;
+}
+.hoverme:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-left: 400px;
+    margin-top: -90px;    
+}
+.hoverme:hover .sub-menu2 li a{
+    color: black;
+    font-size: inherit;
+ 
+}
