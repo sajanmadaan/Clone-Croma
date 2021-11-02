@@ -1,16 +1,19 @@
-.mySlides{
-    margin-left: 0px;
+/* Slideshow container */
+.slideShowContainer {
+  width: 100%;
+  position: relative;
+}
+.mySlides {
+  width: 100%;
   display: none;
 }
-.mySlides img{
+.mySlides img {
   width: 100%;
 }
-.slideShowContainer{
-  width: 100%; 
-  position: relative;
-  margin: auto;
-}
-.prev,.next{
+
+/* Next & previous buttons */
+.prev,
+.next {
   cursor: pointer;
   opacity: 0.5;
   position: absolute;
@@ -21,11 +24,33 @@
   color: gray;
   font-weight: bold;
   font-size: 35px;
-  transition: 0.6s ;
+  transition: 0.6s;
   user-select: none;
 }
-.next{
+.next {
   right: 0;
-  border-radius:  3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
-
+/* dots indicaor  */
+.dotsDiv {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  opacity: 0.7;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  
+}
+.active{
+    background-color: white;
+    opacity: 1;
+}
