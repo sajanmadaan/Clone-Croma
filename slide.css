@@ -1,0 +1,82 @@
+#container {
+
+    height: 80px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Nunito", sans-serif;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  #below {
+    width: 100%;
+     display: inline-flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #slider {
+    display: flex;
+    width: max-content;
+     height: 100%;
+    transition: 1s;
+    
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  ul > div {
+  
+    width: max-content;
+    margin-right: 20px;
+    align-items: center;
+  }
+  
+  li {
+    list-style-type: none;
+  
+    margin: 20px;
+    display: inline-flex;
+  }
+  
+  li img {
+    width: 20px;
+    margin-right: 20px;
+    
+  }
+  
+  button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 35px;
+   
+  }
+  
+  button > img {
+    width: 80%;
+  }
+  
+  #rgbt {
+    position: absolute;
+    right: 0;
+    margin-top: 24px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+  }
+  
+  #lfbt img{
+      opacity: 0.5;
+  }
+  /* donot touch css part */
