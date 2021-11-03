@@ -1,3 +1,8 @@
+body {
+    height: 2000px;
+    position: relative;
+}
+
 .foo {
     background-color: black;
     color: white;
@@ -62,7 +67,11 @@
     grid-row-gap: 15px;
     height: 28px;
 }
-.foo_item_div>div:hover {
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+}
+.foo_item_div>div>a:hover {
     color: green;
 }
 /* .foo_item_div>div {
