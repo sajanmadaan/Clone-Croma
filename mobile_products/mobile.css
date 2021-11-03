@@ -1,0 +1,67 @@
+.phone_container {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+ul.list {
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0px;
+    
+}
+li.list_item {
+    display: inline;
+    color: #666;
+}
+li.list_item:last-child {
+    color: black;
+}
+
+.section_heading {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #333;
+    font-family: "PT Serif",serif;
+    margin: 20px auto 30px auto;
+}
+.category {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.category_item {
+    width: 24%;
+    
+}
+.category_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.advantages {
+    display: flex;
+    column-gap: 10px;
+}
+
+.banner {
+    display: flex;
+    column-gap: 24px;
+    width: 81%;
+}
+
+.banner_item img {
+    width: 100%;
+}
+.banner_full img {
+    width: 100%;
+}
+.banner_video {
+    display: flex;
+    column-gap: 24px;
+}
+.banner_video_item {
+    width: 49%;
+}
+.banner_video iframe {
+    width: 100%;
+}
