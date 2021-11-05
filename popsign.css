@@ -1,0 +1,151 @@
+nav{
+
+    border: 1px solid red;
+    position: fixed;
+    top: 0;
+
+}
+
+#popcont{
+    width: 100%;
+    background-color: rgb(0, 0, 0 , 0.3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.signoutdiv{
+    width: 650px;
+    height: 500px;
+    margin-top: 7%;
+    
+}
+
+#signbox{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+#dummy{
+
+    width: 100px;
+    margin-left: 50%;
+}
+
+
+
+#signcross{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#signcross div{
+    width: 25px;
+    height: 2px;
+    background-color: white; 
+    
+}
+
+#signcross > div{
+  transform: rotate(45deg);
+}
+
+#signcross div > div{
+   
+   transform: rotate(90deg);
+  }
+
+#signtextcont{
+
+   /* border: 1px solid teal; */
+    height: 100%;
+    text-align: center;
+    margin-left: 80px;
+   padding-top: 40px;
+   width: 70%;
+}
+
+#signtextcont > h1{
+
+    font-family: 'PT Serif', serif;
+    font-weight: 4;
+    font-size: 25px;
+}
+
+.signmail{
+
+    width: 97%;
+    height: 40px;
+    font-size: 23px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    
+
+}
+
+#otp{
+
+    line-height: 20px;
+    width: 230px;
+    background-color: #ffb900;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+}
+
+/* #signtextcont > input[type=checkbox]{
+
+  color: teal;
+
+}
+
+.checkbox{
+
+    background-color: teal;
+    
+} */
+
+#signtextcont > label{
+
+    font-size: 14px;
+}
+
+
+.signp{
+
+    line-height: 65px;
+    
+}
+
+#signupbtn{
+    color: teal;
+    text-decoration: none;
+    border: 0;
+    background-color: white;
+    font-size: 15px;    
+}
+
+.signlf{
+
+    text-align: left;
+    
+}
