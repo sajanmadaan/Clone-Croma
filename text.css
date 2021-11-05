@@ -1,0 +1,15 @@
+p {
+    line-height: 2.4rem;
+    font-family: "Nunito",sans-serif;
+    font-weight: 400;
+    color: #666;
+    margin-left: 20px;
+}
+.bold{
+    color: black;
+    font-weight: bold;
+}
+.teallink a{
+    text-decoration-color: teal;
+    color: teal;
+}
