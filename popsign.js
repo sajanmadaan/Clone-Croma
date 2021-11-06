@@ -1,7 +1,7 @@
 document.getElementById("login").addEventListener("click", openPop);
 
 function openPop(){
-
+      
     var container = document.getElementById("popcont");
     container.style.opacity = 1;
     container.style.pointerEvents = "auto";
@@ -22,20 +22,26 @@ function close(){
 
 document.getElementById("signupbtn" ).addEventListener("click", signup);
 
-function signup(){
+//  i think this is not appropriate for input taking since only textcontext is changed
 
-    var signup = document.getElementById("signtextcont");
-    signup.querySelector("h1").textContent = "Sign up for Croma.com";
+// function signup(){
 
-    signup.querySelector("p").textContent = "Create an account to get exclusive deals, track your orders, earn rewards and more";
+//     var signup = document.getElementById("signtextcont");
+//     signup.querySelector("h1").textContent = "Sign up for Croma.com";
+
+//     signup.querySelector("p").textContent = "Create an account to get exclusive deals, track your orders, earn rewards and more";
      
-    signup.getElementsByClassName("signp")[0].textContent = "Existing user?";
+ 
+//     signup.getElementsByClassName("signp")[0].textContent = "Existing user?";
 
-    document.getElementById("signupbtn").textContent = "Login";
+//     document.getElementById("signupbtn").textContent = "Login";
 
-    var ptag = document.createElement("p");
+//     var ptag = document.createElement("p");
 
-    ptag.innerHTML = "By continuing you agree to our <a>Terms of Use</a> & <a>Privacy Policy</a> ";
+//     ptag.innerHTML = "By continuing you agree to our " ;
+//     ptag.innerHTML += "<a href= 'https://www.w3schools.com' >Terms of Use</a>";
+//     ptag.innerHTML +=  " & " + "<a href= 'https://www.w3schools.com' >Privacy Policy</a>";
 
-    signup.append(ptag);
-}
+
+//     signup.append(ptag);
+// }
