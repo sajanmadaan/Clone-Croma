@@ -115,7 +115,7 @@ function addurls(slidedata) {
 
     num++;
 
-    txt.addEventListener("mouseover", changeColor);
+   
   });
 }
 
@@ -157,10 +157,4 @@ function slide(num) {
   count = value;
 }
 
-// This func is not working properly
 
-function changeColor() {
-  document.querySelectorAll("span").style.color = "teal";
-  console.log("oasjfoisajdf");
-}
-// ---------------------------------------------------
