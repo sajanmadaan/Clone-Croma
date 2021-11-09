@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .phone_container {
     width: 80%;
     margin: auto;
@@ -95,6 +99,58 @@ li.list_item:last-child {
     border-radius: 10px;
     width: 100%;
 }
+/* ********************Slider************************** */
+.myslides {
+    display: none;
+}
+.myslides>img {
+    vertical-align: middle;
+}
+.product_slideshow_container {
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 1.5%;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease-in;
+    border-radius: 50%;
+    /* user-select: none; */
+    text-align: center;
+    background-color: hsla(0,0%,100%,.2);
+}
+.next {  
+    right: 2px;  
+}  
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transform: translateY(-300%);
+}  
+.active{
+   background-color: #fff;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 
 /* ********************Footer************************** */
 body {
