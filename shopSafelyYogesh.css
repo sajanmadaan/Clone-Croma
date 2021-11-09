@@ -1,0 +1,43 @@
+h1 {
+  font-weight: 100;
+  text-align: center;
+}
+.shopsafeafter {
+  display: flex;
+  width: 70%;
+  /* border: 1px solid blue; */
+  height: 100px;
+  margin: auto;
+}
+
+.safeBox {
+  /* border: 1px solid red; */
+  width: 31%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+}
+.imgBox > img {
+  height: 100%;
+}
+
+.imgBox {
+  /* border: 1px solid black; */
+  width: 40%;
+}
+
+.textBox {
+  /* border: 1px solid green; */
+  /* width: 55%; */
+  text-align: left;
+}
+
+.ptagcolor {
+  display: block;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #005652;
+  font-weight: bold;
+  cursor: pointer;
+}
