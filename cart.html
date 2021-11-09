@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div id="headdiv" class="shadow">
+        <span>Your Cart </span>
+        <button class="checkout">CHECKOUT</button>
+    </div>
+
+    <div id="cartcont">
+ 
+
+    <div id="itemsdiv" ></div>
+    <div id="infodiv">
+        <div></div>
+        <div id="cartcoupon">
+            <div>
+                <input type="text" placeholder="Enter coupon code" class="back">
+                <button class="back">Apply</button>
+            </div>
+        </div>
+        <div class="payinfo shadow">
+            <h1>Payment Details</h1>
+            <div class="costs">
+                <div>   Item total <span>₹159,978.00</span> </div>
+                <div>Delivery cost at 533005 <span>₹159,978.00</span> </div>
+                <div>Today’s savings <span>₹159,978.00</span> </div>
+                 <hr >
+                <div>Total price <span>₹159,978.00</span> </div>
+            </div>
+            <div class="lft">
+              <input type="checkbox"> <label for="">
+                  <span>this a gift item?</span>  </label>
+                  <br>
+                  <input type="checkbox"> <label for="">
+                    <span>Towards Donation for the underprivileged</span>  </label>
+            </div>
+            <div class="rgt lft">
+                <button class="checkout" id="checkbottom">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+   
+</body>
+</html>
+
+<script src="cart.js"></script>

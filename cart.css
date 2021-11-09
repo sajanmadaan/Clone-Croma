@@ -1,0 +1,196 @@
+#cartcont{
+    width: 80%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+   flex-wrap: wrap;
+   font-weight: 600;
+    height: 800px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#headdiv{
+    width: 80%;
+    border: 1px solid blue;
+    height: 100px;
+    margin: auto;
+    
+    text-align: center;
+    
+
+}
+
+#itemsdiv{
+   
+    width: 65%;
+    border: 1px solid green;
+}
+
+#infodiv{
+
+    width: 30%;
+    border: 1px solid teal;
+}
+
+.payinfo{
+    border: 1px solid yellow;
+    height: 400px;
+}
+
+.costs{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid red;
+    
+}
+
+.costs > div {
+
+    margin-top: 10px;
+}
+.costs span{
+
+    float: right;
+}
+
+.costs hr{
+
+    width: 100%;
+}
+.lft{
+    width: 48%;
+    display: inline-block;
+    border: 1px solid blue;
+    height: 100px;
+    vertical-align: middle;
+}
+
+/* .lft span::before{
+
+    content: "\27";
+} */
+
+.rgt{
+
+   text-align: center;
+   align-content: center;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3%;
+}
+
+.prodiv{
+
+    display: flex;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px  solid orange;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+.prodiv > div{
+
+   
+    border: 1px solid teal;
+   
+}
+
+.image{
+    
+    width: 150px;
+    border: 1px solid black;
+    
+}
+
+.floating{
+
+    float: right;
+}
+
+#textdiv h3 {
+    
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#textdiv > div:nth-child(2){
+   
+border: 1px solid black;
+margin-bottom: 15px;
+    width: 300px;
+}
+
+#textdiv > div:nth-child(3){
+   
+    border: 1px solid black;
+      
+    }
+
+.oldprice{
+
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.prodiv > button{
+
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+
+#cartcoupon{
+
+   
+    display: flex;
+    justify-content: space-around;
+    
+    height: 80px;
+   padding: 20px;
+   border: 1px solid purple;
+}
+
+#cartcoupon > div{
+
+    width: 90%;
+    background-color: whitesmoke;
+    height: 40px;
+    display: flex;
+   margin-top: 18px;
+
+}
+
+#cartcoupon input{
+
+    flex-basis: 80%;
+  
+}
+
+.back{
+
+    background-color: transparent;
+    border: 0;
+}
+
+.checkout{
+
+    height: 40px;
+    background-color: #ffb900;
+    border-radius: 19px;
+    width: 160px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    border: 0;
+}
+
+#checkbottom{
+
+    margin-top: 10%;
+}
