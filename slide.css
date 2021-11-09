@@ -1,4 +1,4 @@
-#container {
+#topslidecont {
 
     height: 80px;
     display: flex;
@@ -17,7 +17,7 @@
     overflow: hidden;
   }
   
-  #slider {
+  #slidertop {
     display: flex;
     width: max-content;
      height: 100%;
@@ -25,31 +25,31 @@
     
   }
   
-  ul {
+  #slidertop > ul {
     display: flex;
   }
   
-  ul > div {
+  #slidertop > ul > div {
   
     width: max-content;
     margin-right: 20px;
     align-items: center;
   }
   
-  li {
+ #slidertop  li {
     list-style-type: none;
   
     margin: 20px;
     display: inline-flex;
   }
   
-  li img {
+ #slidertop li img {
     width: 20px;
     margin-right: 20px;
     
   }
   
-  button {
+  #topslidecont button {
     border: 0;
     border-radius: 50%;
     width: 40px;
@@ -60,7 +60,7 @@
    
   }
   
-  button > img {
+ #topslidecont button > img {
     width: 80%;
   }
   
@@ -70,7 +70,7 @@
     margin-top: 24px;
   }
   
-  a {
+  #anchor {
     color: black;
     text-decoration: none;
     display: inline-flex;

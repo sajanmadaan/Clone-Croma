@@ -109,6 +109,7 @@ function addurls(slidedata) {
     var anchor = document.createElement("a");
     anchor.href = "product.html";
     anchor.append(image, txt);
+    anchor.setAttribute("id" , "anchor")
 
     litag.append(anchor);
 
@@ -150,7 +151,7 @@ function slide(num) {
     return;
   }
 
-  var slider = document.getElementById("slider");
+  var slider = document.getElementById("slidertop");
   slider.style.transform = " translate(-" + value + "%)";
 
   count = value;
