@@ -7,18 +7,26 @@
    font-weight: 600;
     height: 800px;
     font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 #headdiv{
     width: 80%;
-    border: 1px solid blue;
-    height: 100px;
+
+    height: 90px;
     margin: auto;
-    
+    border-radius: 7px;
     text-align: center;
-    
+    margin-bottom: 20px;
 
 }
+
+#headdiv > div {
+
+    transform: translateY(50%);
+    font-size: 26px;
+}
+
 
 #itemsdiv{
    
@@ -188,9 +196,18 @@ margin-bottom: 15px;
     font-weight: 600;
     font-size: 17px;
     border: 0;
+    color:  #234531;
+    margin-left: 10%;
 }
 
 #checkbottom{
 
     margin-top: 10%;
+    margin-left: auto;
+}
+
+.lightgrey{
+
+    color: #686464;
+    font-size: 14px;
 }

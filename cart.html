@@ -18,8 +18,13 @@
 <body>
 
     <div id="headdiv" class="shadow">
-        <span>Your Cart </span>
-        <button class="checkout">CHECKOUT</button>
+        <div>
+            <span id="headinnerspan">Your Cart &nbsp;</span>
+            <span id="qty" class="lightgrey"></span>
+            <span class="itemprice">&emsp;</span>
+            <button class="checkout">CHECKOUT</button>
+        </div>
+        
     </div>
 
     <div id="cartcont">
@@ -37,11 +42,11 @@
         <div class="payinfo shadow">
             <h1>Payment Details</h1>
             <div class="costs">
-                <div>   Item total <span>₹159,978.00</span> </div>
-                <div>Delivery cost at 533005 <span>₹159,978.00</span> </div>
-                <div>Today’s savings <span>₹159,978.00</span> </div>
+                <div>   Item total <span class="itemprice">₹</span> </div>
+                <div>Delivery cost at 533005 <span>Free</span> </div>
+                <div>Today’s savings <span id="savings">₹159,978.00</span> </div>
                  <hr >
-                <div>Total price <span>₹159,978.00</span> </div>
+                <div>Total price <span >₹159,978.00</span> </div>
             </div>
             <div class="lft">
               <input type="checkbox"> <label for="">
