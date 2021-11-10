@@ -24,7 +24,6 @@
   color: gray;
   font-weight: bold;
   font-size: 35px;
-  transition: 0.6s;
   user-select: none;
 }
 .next {
