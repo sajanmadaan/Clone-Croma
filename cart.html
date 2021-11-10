@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/28e3ee16ef.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -21,7 +23,7 @@
         <div>
             <span id="headinnerspan">Your Cart &nbsp;</span>
             <span id="qty" class="lightgrey"></span>
-            <span class="itemprice">&emsp;</span>
+            <span class="itemprice effprice">&emsp;₹</span>
             <button class="checkout">CHECKOUT</button>
         </div>
         
@@ -32,11 +34,14 @@
 
     <div id="itemsdiv" ></div>
     <div id="infodiv">
-        <div></div>
+        <div id="deliveryincart" class="shadow">
+            <div><span>Delivery options for </span> <span id="pinincart"></span>  <button id="popinbtn">Change</button> </div>   
+            <div id="changingdiv">Delivery options are not available for this pincode.</div>
+        </div>
         <div id="cartcoupon">
             <div>
-                <input type="text" placeholder="Enter coupon code" class="back">
-                <button class="back">Apply</button>
+                <input type="text" placeholder="Enter coupon code" class="back" id="couponinput">
+                <button class="back" onclick="checkcoupon()">Apply</button>
             </div>
         </div>
         <div class="payinfo shadow">
@@ -44,9 +49,9 @@
             <div class="costs">
                 <div>   Item total <span class="itemprice">₹</span> </div>
                 <div>Delivery cost at 533005 <span>Free</span> </div>
-                <div>Today’s savings <span id="savings">₹159,978.00</span> </div>
+                <div>Today’s savings <span id="savings">₹</span> </div>
                  <hr >
-                <div>Total price <span >₹159,978.00</span> </div>
+                <div>Total price <span id="totalprice" >₹</span> </div>
             </div>
             <div class="lft">
               <input type="checkbox"> <label for="">
@@ -62,6 +67,13 @@
     </div>
 
     </div>
+
+    <!-- <div id="transpin">
+        <div>
+            <button id="crosspin"><div> <div></div> </div></button>
+            <div></div>
+        </div>
+    </div> -->
    
 </body>
 </html>

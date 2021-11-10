@@ -458,7 +458,7 @@ var cartItems = JSON.parse(localStorage.getItem("cartItems :")) ||  [];
 cartItems.map(display);
 
 var maindiv = document.getElementById("itemsdiv");
-function display(item){
+function display(item, index){
 
     var div = document.createElement("div");
 
@@ -491,10 +491,12 @@ function display(item){
 
     var pricesdiv = document.createElement("div");
     var newprice = document.createElement("span");
-    newprice.textContent =  item.price;
+    newprice.textContent = "₹" + item.price;
+    newprice.setAttribute("class", "effprice")
 
     var oldprice = document.createElement("span");
     oldprice.textContent =  item.realPrice;
+    oldprice.setAttribute("class", "oldprice")
     pricesdiv.append(newprice, oldprice)
 
     textdiv.append(h2tag, idquantitydiv, pricesdiv);
@@ -512,7 +514,12 @@ function display(item){
 
     var deletebtn = document.createElement("button");
     deletebtn.textContent = "delete";
+    deletebtn.innerHTML = "<i class='far fa-trash-alt fa-2x'></i>"
     div.append(deletebtn);
+
+    deletebtn.addEventListener("click",function(){
+         remove(index);
+    });
     
 }
 
@@ -525,13 +532,64 @@ var quantity = cartItems.length;
 
 document.getElementById("qty").innerHTML = "[&nbsp;" + quantity + "&nbsp;item(s)&nbsp;]";
 var two = document.querySelectorAll(".itemprice");
-two.textContent += itemprice;
+// two[0].textContent += itemprice;
+two.forEach(function(item){
+   item.textContent += itemprice;
+})
 
+
+var save = cartItems.reduce(function(ac, item){
+
+    var diff ;
+    
+   
+     if(item.realPrice == undefined){
+         diff = 0;
+     }else{
+
+        diff = item.realPrice - item.price;
+     }
+
+    return ac + diff;
+},0);
+
+document.getElementById("totalprice").textContent += itemprice;
 
 document.getElementById("savings").textContent += save;
 
-var save = cartItems.reduce(function(ac, item){
-    console.log(item.realPrice  + "  " + item.price);
-    return ac + (item.realPrice - item.price);
-},0);
+function remove (index){
+   
+    console.log(index)
+     cartItems.splice(index, 1);
+    localStorage.setItem("cartItems :", JSON.stringify(cartItems));
+     console.log("here")
+     console.log(cartItems)
+    document.getElementById("itemsdiv").innerHTML ="";
+    cartItems.map(display);
+}
+
+function checkcoupon(){
+
+    var totalprice = itemprice;
+    var value = document.getElementById("couponinput").value;
+
+    if(value == "masai30"){
+
+        totalprice -= totalprice * 0.3;
+    }
+
+    
+    document.getElementById("savings").textContent = "₹" + (save + totalprice * 0.3);
+    document.getElementById("totalprice").textContent = "₹" + totalprice;
+}
+
+
+var pinvalue = JSON.parse(localStorage.getItem("pincode :")) || null;
+
+// function for apply in delivery
+
+function changeapply (){
+
+
+}
 
