@@ -1,0 +1,80 @@
+#popularMainContainer {
+  border: 2px solid black;
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+}
+#productContainer {
+  width: 100%;
+  border: 2px solid blue;
+  display: flex;
+}
+#sortBox {
+  width: 30%;
+  border: 1px solid red;
+}
+#productBox {
+  width: 68%;
+  border: 1px solid green;
+  margin-left: auto;
+}
+
+#totalItems {
+  margin-left: auto;
+}
+#box {
+  width: 100%;
+  height: 350px;
+  margin-top: 5px;
+  border: 2px solid purple;
+  display: flex;
+  /* padding: 10px; */
+}
+#box #productImage {
+  width: 30%;
+  height: 78%;
+  background-color: rebeccapurple;
+  margin: auto;
+}
+#desBox {
+  width: 70%;
+  height: 90%;
+  border: 2px solid blue;
+}
+#prodDes {
+  font-weight: lighter;
+  border: 1px solid blueviolet;
+}
+#prodId {
+  margin-top: -15px;
+  border: 1px solid red;
+}
+#prodPrice {
+  border: 1px solid blue;
+  align-items: center;
+  display: flex;
+}
+#discPrice {
+  font-size: 20px;
+  font-weight: 700;
+}
+#realPrice {
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 15px;
+}
+#discount {
+  font-size: 12px;
+  border-radius: 10px 0 10px 0;
+  background: #dbeff7;
+  padding: 5px 10px 5px;
+  margin-left: 10px;
+  font-weight: 700;
+  color: #2e96bd;
+}
+#star{
+    margin-left: auto;
+}
+#compareBox{
+    border
+}
