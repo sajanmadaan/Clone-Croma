@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            width: 70%;
+            margin:auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid black;
+        }
+        span {
+            position: absolute;
+            top: 40%;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+        span:nth-child(2) {
+            left: 98%;
+            text-align: right;
+        }
+        section {
+            width: 98%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        section::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        div {
+            width: 24%;
+            height: 200px;
+            position: relative;
+            left: 0;
+            transition: 0.5s;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Shop by price</h2>
+        <span>&#155;</span>
+        <span>&#139;</span>
+        <section>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625303034/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Group_6_te1lp0.jpg/mxw_1242,f_auto">
+            </div>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625303034/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Group_7_vdu840.jpg/mxw_1242,f_auto">
+            </div>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625303034/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Group_8_ksum5x.jpg/mxw_1242,f_auto">
+            </div>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625303034/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Group_9_udvvvz.jpg/mxw_1242,f_auto">
+            </div>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625463555/Croma%20Assets/CMS/LP%20Page%20Banners/2021/Group_10_ize5xe.jpg/mxw_1242,f_auto">
+            </div>
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625463555/Croma%20Assets/CMS/LP%20Page%20Banners/2021/Group_11_i2douo.jpg/mxw_1242,f_auto">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+<script>
+    var span = document.getElementsByTagName("span");
+    var div = document.getElementsByTagName("div");
+    var l = 0;
+    span[1].onclick = () => {
+        l++;
+        if(l=0){div.style.left = "0%"}
+        if(l=1){div.style.left = "-24%"}
+        if(l=2){div.style.left = "-48%"}
+        if(l=3){div.style.left = "-72%"}
+        if(l=4){div.style.left = "-96%"}
+        if(l=5){div.style.left = "-120%"}
+        if(l>5){l=5};
+    }
+</script>

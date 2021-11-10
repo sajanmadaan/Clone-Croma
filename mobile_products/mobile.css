@@ -234,7 +234,7 @@ body {
     text-decoration: none;
 }
 .foo_item_div>div>a:hover {
-    color: green;
+    color: teal;
 }
 /* .foo_item_div>div {
     

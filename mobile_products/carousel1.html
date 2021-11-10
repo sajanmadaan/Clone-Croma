@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .carousel {
+            width: 75%;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left,
+        .right {
+            position: absolute;
+            top: 40%;
+            left: 0.5%;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .right {
+            left: 98%;
+            text-align: right;
+            /* transform: translateX(300%); */
+        }
+
+        .left {
+            /* transform: translateX(-300%); */
+        }
+
+        .flex_con {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .flex_item {
+            min-width: 250px;
+            height: 120px;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.5s;
+            left: 0;
+        }
+
+        .flex_con::-webkit-scrollbar {
+            /* visibility: hidden; */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <span class="left">&#139;</span>
+        <span class="right">&#155;</span>
+        <div class="flex_con">
+            <div class="flex_item">1</div>
+            <div class="flex_item">2</div>
+            <div class="flex_item">3</div>
+            <div class="flex_item">4</div>
+            <div class="flex_item">5</div>
+            <div class="flex_item">6</div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var span = document.getElementsByTagName("span");
+    var item = document.querySelectorAll(".flex_item");
+    var l = 0;
+    console.log(item);
+    span[1].onclick = () => {
+        l++;
+        console.log(l);
+        for (var i of item) {
+            if (l == 0) { i.style.left = "0px"; }
+            if (l == 1) { i.style.left = "-250px"; }
+            if (l == 2) { i.style.left = "-500px"; }
+            if (l == 3) { i.style.left = "-750px"; }
+            if (l == 4) { i.style.left = "-1000px"; }
+            if (l == 5) { i.style.left = "-1250px"; }
+            if (l > 5) { l = 5; }
+        }
+
+    }
+</script>
