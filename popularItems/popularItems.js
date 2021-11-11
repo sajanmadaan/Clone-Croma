@@ -159,7 +159,6 @@ function sortPrice() {
       return b.price - a.price;
     });
   }
-  console.log(popularItems);
   popularProd(popularItems);
 }
 
@@ -198,6 +197,8 @@ function popularProd(data) {
     discount.textContent = item.discount;
     var star = document.createElement("span");
     star.setAttribute("id", "star");
+    
+    star.innerHTML = '<i class="fas fa-star"></i>';
     star.textContent = item.rating;
 
     var compareBox = document.createElement("div");
@@ -230,7 +231,7 @@ function popularProd(data) {
     buyNowBtn.setAttribute("id", "buyNowBtn");
     buyNowBtn.textContent = "BUY NOW";
     buyNowBtn.addEventListener("click", function () {
-      buyNowBtn(item);
+      buyNow(item);
     });
 
     // appending data in body
@@ -244,6 +245,10 @@ function popularProd(data) {
 }
 function addToCart(item) {
   cart.push(item);
-  console.log(cart);
   localStorage.setItem("cartItems", JSON.stringify(cart));
+}
+
+function buyNow(item) {
+  cart.push(item);
+  localStorage.setItem("cartItems",JSON.stringify(cart));
 }
