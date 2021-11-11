@@ -436,22 +436,7 @@ var data = [
 localStorage.setItem("cartItems :",JSON.stringify(data));
 
 
-// var dummy = [
 
-//     {name : "Samsung Galaxy S20 FE 5G (128GB ROM, 8GB RAM, SM-G781BZBG, Cloud Navy)",
-//     Productid: "233767", 
-//     quantity : "1",
-//     disprice : "75,980.00",
-//     oriprice : "85,980.00",
-//     image_url : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_110,w_110/v1627022922/Croma%20Assets/Communication/Mobiles/Images/240337_h4iolz.png/mxw_2048,s_webp,f_auto"     },
-
-//     {name : "OnePlus 9R (128GB ROM, 8GB RAM, LE2101, Carbon Black)",
-//     Productid: "233910", 
-//     quantity : "1",
-//     disprice : "36,999.00",
-//     oriprice : "39,999.00" ,
-//     image_url : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_110,w_110/v1618481348/Croma%20Assets/Communication/Mobiles/Images/233910_oelzkr.png/mxw_2048,s_webp,f_auto"    }
-// ]
 
 var cartItems = JSON.parse(localStorage.getItem("cartItems :")) ||  [];
 
@@ -582,6 +567,8 @@ function checkcoupon(){
     document.getElementById("savings").textContent = "₹" + (save + totalprice * 0.3);
     document.getElementById("totalprice").textContent = "₹" + totalprice;
 }
+
+  
 
 
 var pinvalue = JSON.parse(localStorage.getItem("pincode :")) || null;
