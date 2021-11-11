@@ -509,74 +509,189 @@ function display(item, index){
 }
 
 
- var itemprice = cartItems.reduce(function(ac, item){
-    return ac + (item.price);
-},0);
-
-var quantity = cartItems.length;
-
-document.getElementById("qty").innerHTML = "[&nbsp;" + quantity + "&nbsp;item(s)&nbsp;]";
-var two = document.querySelectorAll(".itemprice");
-// two[0].textContent += itemprice;
-two.forEach(function(item){
-   item.textContent += itemprice;
-})
 
 
-var save = cartItems.reduce(function(ac, item){
 
-    var diff ;
-    
-   
-     if(item.realPrice == undefined){
-         diff = 0;
-     }else{
-
-        diff = item.realPrice - item.price;
-     }
-
-    return ac + diff;
-},0);
-
-document.getElementById("totalprice").textContent += itemprice;
-
-document.getElementById("savings").textContent += save;
 
 function remove (index){
    
-    console.log(index)
+    // console.log(index)
      cartItems.splice(index, 1);
     localStorage.setItem("cartItems :", JSON.stringify(cartItems));
-     console.log("here")
-     console.log(cartItems)
+    //  console.log("here")
+    //  console.log(cartItems)
     document.getElementById("itemsdiv").innerHTML ="";
     cartItems.map(display);
 }
 
-function checkcoupon(){
 
-    var totalprice = itemprice;
-    var value = document.getElementById("couponinput").value;
 
-    if(value == "masai30"){
 
-        totalprice -= totalprice * 0.3;
-    }
+  // for opening and closing
 
-    
-    document.getElementById("savings").textContent = "₹" + (save + totalprice * 0.3);
-    document.getElementById("totalprice").textContent = "₹" + totalprice;
-}
 
-  
-
+localStorage.setItem("paymentDetails",JSON.stringify(paymentstore)) ;
 
 var pinvalue = JSON.parse(localStorage.getItem("pincode :")) || null;
 
-// function for apply in delivery
+
+
+document.getElementById("popinbtn").addEventListener("click", popup);
+
+function popup(){
+
+  var transblack = document.getElementById("transpin");
+
+  transblack.style.opacity = 1;
+  transblack.style.pointerEvents = "auto";
+}
+
+document.getElementById("crosspin").addEventListener("click", closepin);
+
+function closepin(){
+
+  var transblack = document.getElementById("transpin");
+
+  transblack.style.opacity = 0;
+  transblack.style.pointerEvents = "none";
+
+}
+
+document.getElementById("applybtncart"),addEventListener("click", setpin);
+
+function setpin (){
+
+  var pinvalue = document.getElementById("pininputcart").value;
+
+  // if(pinvalue.length != 5 ){
+
+  //   alert("Wrong Pin");
+  //   return ;
+  // }
+
+ localStorage.setItem("pincode :",JSON.stringify(pinvalue));
+ 
+changeapply();
+ 
+}
 
 function changeapply (){
 
 
+   var pin = JSON.parse(localStorage.getItem("pincode :")) || null;
+
+ 
+  var changediv = document.getElementById("changingdiv");
+  
+  console.log(changediv);
+  
+    if( pin == "533005"){
+        
+     var spanradio1 =  document.createElement("span");
+       spanradio1.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery";
+      
+       changediv.innerHTML = "";
+      changediv.append(spanradio1);
+      
+      return ;
+    }
+
+    if( pin == "530012"){
+
+      // changediv.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery"
+      // changediv.innerHTML += "<input type='radio'></input> &nbsp Available For Pickup Croma, Vizag Muralinagar"
+
+      var spanradio1 =  document.createElement("span");
+      spanradio1.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery";
+
+      var spanradio2 = document.createElement("span");
+      spanradio2.innerHTML = "<input type='radio'></input> &nbsp Available For Pickup Croma, Vizag Muralinagar";
+     
+      changediv.innerHTML = "";
+     changediv.append(spanradio1, spanradio2);
+
+     return ;
+    }
+
+    if(pin == null){
+
+      changediv.innerHTML = "Delivery options are not available for this pincode."; 
+    }
 }
 
+// calculation
+
+var itemprice = cartItems.reduce(function(ac, item){
+  return ac + (item.price);
+},0);
+
+var quantity = cartItems.length;
+document.getElementById("qty").innerHTML = "[&nbsp;" + quantity + "&nbsp;item(s)&nbsp;]";
+
+
+var two = document.querySelectorAll(".itemprice");
+// two[0].textContent += itemprice;
+two.forEach(function(item){
+ item.textContent += itemprice;
+})
+// dlfskgjdlkfjg above price is nopt correct
+
+var save = cartItems.reduce(function(ac, item){
+
+  var diff ;
+  
+   if(item.realPrice == undefined){
+       diff = 0;
+   }else{
+
+      diff = item.realPrice - item.price;
+   }
+
+  return ac + diff;
+},0);
+
+var payvalue = itemprice;
+document.getElementById("totalprice").textContent += payvalue;
+
+document.getElementById("savings").textContent += save;
+
+
+
+var paymentstore = {
+
+  Itemtotal : itemprice,
+  Deliverycharge : 0,
+  Totalprice : payvalue,
+};
+
+
+localStorage.setItem("paymentDetails", JSON.stringify(paymentstore));
+
+function checkcoupon(){
+
+  var effprice = itemprice;
+  var value = document.getElementById("couponinput").value;
+  var dis;
+  if(value == "masai30"){
+
+      dis = effprice * 0.3;
+      effprice -=  effprice * 0.3;
+  }else{
+    dis = 0;
+  }
+
+  
+  document.getElementById("savings").textContent = "₹" +( save + dis);
+  console.log(totalprice)
+  document.getElementById("totalprice").textContent = "₹" + effprice;
+
+  paymentstore = {
+
+    Itemtotal : itemprice,
+    Deliverycharge : 0,
+    Totalprice : effprice,
+  };
+  
+  localStorage.setItem("paymentDetails", JSON.stringify(paymentstore));
+  document.querySelector(".effprice").innerHTML = "₹" + effprice;
+}

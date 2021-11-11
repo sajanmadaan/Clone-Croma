@@ -35,10 +35,10 @@
     <div id="itemsdiv" ></div>
     <div id="infodiv">
         <div id="deliveryincart" class="shadow">
-            <div><span>Delivery options for </span> <span id="pinincart"></span>  <button id="popinbtn">Change</button> </div>   
-            <div id="changingdiv">Delivery options are not available for this pincode.</div>
+            <div><span class="pintextteal">Delivery options for </span> <span id="pinincart"></span>  <button id="popinbtn">Change</button> </div>   
+            <div id="changingdiv">Delivery options are not available for this pincode. </div>
         </div>
-        <div id="cartcoupon">
+        <div id="cartcoupon" class="shadow">
             <div>
                 <input type="text" placeholder="Enter coupon code" class="back" id="couponinput">
                 <button class="back" onclick="checkcoupon()">Apply</button>
@@ -48,7 +48,7 @@
             <h1>Payment Details</h1>
             <div class="costs">
                 <div>   Item total <span class="itemprice">₹</span> </div>
-                <div>Delivery cost at 533005 <span>Free</span> </div>
+                <div class="pintextteal">Delivery cost at  <span>Free</span> </div>
                 <div>Today’s savings <span id="savings">₹</span> </div>
                  <hr >
                 <div>Total price <span id="totalprice" >₹</span> </div>
@@ -68,12 +68,16 @@
 
     </div>
 
-    <!-- <div id="transpin">
+    <div id="transpin">
         <div>
             <button id="crosspin"><div> <div></div> </div></button>
-            <div></div>
+            <div id="applycart">
+                <p>Enter a pincode to see available delivery options</p>
+                <input type="text" placeholder="Enter pincode" id="pininputcart">
+                <button id="applybtncart">APPLY</button>
+            </div>
         </div>
-    </div> -->
+    </div>
    
 </body>
 </html>

@@ -1,14 +1,4 @@
-#cartcont{
-    width: 80%;
-    border: 1px solid red;
-    margin: auto;
-    display: flex;
-   flex-wrap: wrap;
-   font-weight: 600;
-    height: 800px;
-    font-family: 'Nunito Sans', sans-serif;
-    
-}
+
 
 #headdiv{
     width: 80%;
@@ -18,6 +8,19 @@
     border-radius: 7px;
     text-align: center;
     margin-bottom: 20px;
+    
+}
+
+#cartcont{
+    width: 80%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+   flex-wrap: wrap;
+   font-weight: 600;
+    height: 800px;
+    font-family: 'Nunito Sans', sans-serif;
+    /* position: relative; */
     
 }
 
@@ -31,7 +34,7 @@
 #itemsdiv{
    
     width: 65%;
-    border: 1px solid green;
+  
 }
 
 #infodiv{
@@ -39,13 +42,15 @@
     width: 33.3%;
     border: 1px solid teal;
     margin-left: 16px;
+ 
+    
 }
 
 .payinfo{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     height: 400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
     margin-top: 20px;
 }
 
@@ -61,7 +66,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 
@@ -81,7 +86,7 @@
 .lft{
     width: 48%;
     display: inline-block;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 100px;
     vertical-align: middle;
     margin-top: 20px;
@@ -108,21 +113,22 @@
     display: flex;
     margin-top: 20px;
     padding: 15px;
-    border: 1px  solid orange;
+    /* border: 1px  solid orange; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
+    border-radius: 10px;
 }
 .prodiv > div{
 
    
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
    
 }
 
 .image{
     
     width: 150px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 
@@ -139,17 +145,16 @@
 }
 
 #textdiv > div:nth-child(2){
-   
-border: 1px solid black;
+
 margin-bottom: 15px;
     width: 300px;
 }
 
-#textdiv > div:nth-child(3){
+/* #textdiv > div:nth-child(3){
    
     border: 1px solid black;
       
-    }
+    } */
 
 .oldprice{
 
@@ -176,7 +181,7 @@ margin-bottom: 15px;
     margin-top: 20px;
     height: 60px;
    padding: 20px;
-   border: 1px solid purple;
+   /* border: 1px solid purple; */
    border-radius: 8px;
 }
 
@@ -194,6 +199,9 @@ margin-bottom: 15px;
 #cartcoupon input{
 
     flex-basis: 80%;
+    border: 0;
+    outline: 0;
+
 
 }
 
@@ -249,13 +257,13 @@ margin-bottom: 15px;
 }
 
 #deliveryincart{
-
-    
+  
     padding: 15px;
    font-family: initial;
    font-size: 20px;
    font-weight: lighter;
    background-color: whitesmoke;
+   margin-top: 15px;
     
 }
 
@@ -263,6 +271,7 @@ margin-bottom: 15px;
 
    color: teal;
    float: right;
+   border: 0;
 }
 
 #changingdiv{
@@ -272,11 +281,40 @@ margin-bottom: 15px;
     font-weight: 700;
     font-size: 17px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 
-/* 
+
+#transpin{
+
+        width: 100%;
+        background-color: rgb(0, 0, 0 , 0.3);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        align-content: center;
+        position: fixed;
+      
+        pointer-events: none;
+        opacity: 0;
+        transition: 1s;
+        /* font-family: 'Nunito', sans-serif; */
+        
+ 
+}
+
+#transpin > div {
+
+    margin-top: 300px;
+    border: 1px solid red;
+    height: 400px;
+  
+}
+
 #crosspin{
     width: 30px;
     height: 30px;
@@ -286,6 +324,7 @@ margin-bottom: 15px;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+
 }
 
 #crosspin div{
@@ -302,4 +341,46 @@ margin-bottom: 15px;
 #crosspin div > div{
    
    transform: rotate(90deg);
-  } */
+  }
+
+  #applycart{
+
+    background-color: white;
+    margin-top: 50px;
+    width: 450px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 15px;
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #applycart > p{
+
+    font-size: 18px ;
+    
+  }
+
+  #applycart > input{
+
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    border:  0;
+    padding-left: 10px;
+  }
+
+  #applybtncart{
+
+    width: 130px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: teal;
+    color: whitesmoke;
+    border: 0;
+  }
