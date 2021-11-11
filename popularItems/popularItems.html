@@ -5,19 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Popular</title>
+    <script
+      src="https://kit.fontawesome.com/0db1e4ee93.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="popularItems.css" />
   </head>
   <body>
-      <!-- mainContainer  -->
+    <!-- mainContainer  -->
     <div id="popularMainContainer">
       <h4>Croma > Campaign > Popular Smartphones</h4>
       <div id="productContainer">
-        <div id="sortBox"></div>
-        <div id="productBox">
-          <div>
-            <span >Popular Smartphones</span>
-            <span id="totalItems">13 product</span>
+        <!-- left side area  -->
+        <div id="sortBox">
+          <!-- div for adjustment inside left box -->
+          <div id="sortItemsDiv">
+            <div id="toggleBox">
+              <span id="toggleText">Exclude out of stock items</span>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div id="sortDiv">
+              <h3>Sort By</h3>
+              <select id="sortSelection" onchange="sortPrice()">
+                <option value="">Top Rated</option>
+                <option value="high">Price (Highest First)</option>
+                <option value="low">Price (Low First)</option>
+              </select>
+
+              <div id="filterDiv">
+                <h3>Filter</h3>
+                <hr class="line" />
+                <div>
+                  <div style="display: flex; margin-bottom: 20px">
+                    <span>Categoty</span>
+                    <span style="margin-left: auto"
+                      ><i class="fas fa-chevron-up"></i
+                    ></span>
+                  </div>
+
+                  <div class="filterText">
+                    <input type="checkbox" class="checkBox" />Android Phones
+                    (13)
+                  </div>
+                </div>
+                <hr class="line" />
+                <div>
+                  <div style="display: flex; margin-bottom: 20px">
+                    <span>Price</span>
+                    <span style="margin-left: auto"
+                      ><i class="fas fa-chevron-up"></i
+                    ></span>
+                  </div>
+
+                  <div class="filterText">
+                    <input type="checkbox" class="checkBox" /> 10,001 - 20,000
+                    (4)
+                  </div>
+                  <br />
+                  <div class="filterText" style="margin-top: -20px">
+                    <input type="checkbox" class="checkBox" /> 20,001 - 30,000
+                    (9)
+                  </div>
+                </div>
+                <hr class="line" />
+                <div>
+                  <div style="display: flex; margin-bottom: 20px">
+                    <span>Brand</span>
+                    <span style="margin-left: auto"
+                      ><i class="fas fa-chevron-up"></i
+                    ></span>
+                  </div>
+
+                  <div class="filterText">
+                    <input type="checkbox" class="checkBox" /> OnePlus (5)
+                  </div>
+                  <br />
+                  <div class="filterText" style="margin-top: -20px">
+                    <input type="checkbox" class="checkBox" /> Xiaomi (8)
+                  </div>
+                </div>
+                <hr class="line" />
+                <div>
+                  <div style="display: flex; margin-bottom: 20px">
+                    <span>Delivery Modes</span>
+                    <span style="margin-left: auto"
+                      ><i class="fas fa-chevron-up"></i
+                    ></span>
+                  </div>
+
+                  <div class="filterText">
+                    <input type="checkbox" class="checkBox" /> Store Pickup (12)
+                  </div>
+                  <br />
+                  <div class="filterText" style="margin-top: -20px">
+                    <input type="checkbox" class="checkBox" /> Home Delivery (9)
+                  </div>
+                  <br>
+                  <div class="filterText" style="margin-top: -20px">
+                    <input type="checkbox" class="checkBox" /> Zip Delivery (4)
+                  </div>
+                  <br>
+                </div>
+                <hr class="line" />
+                <div>
+                  <div style="display: flex; margin-bottom: 20px">
+                    <span>Shop With Video</span>
+                    <span style="margin-left: auto"
+                      ><i class="fas fa-chevron-up"></i
+                    ></span>
+                  </div>
+
+                  <div class="filterText">
+                    <input type="checkbox" class="checkBox" /> Include Applicable Products (13)
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- product Box show right side area of box  -->
+        <div id="productBox">
+          <div id="totalProduct"></div>
         </div>
       </div>
     </div>
