@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  width: 90%;
+  margin: auto;
+}
+
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  margin: 10px;
+  font-weight: 700;
+  font-family: "PT Serif", serif;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel > p {
+  padding-left: 25px;
+  margin: 10px 0px 10px 0px;
+}
+
+li,
+p,h2 {
+  font-family: "Nunito", sans-serif;
+}
+
+.btnReview {
+  width: 15%;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  border: 0.01px solid black;
+  border-radius: 100px;
+  padding: 7px;
+  margin: 3px 5px 3px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#btn-1{
+  background-color: #005652;
+  color: white;
+  border: 0;
+}
+
+.btnReview:hover {
+  background-color: #005652;
+  color: white;
+  border: 0;
+}
+#inReviewY {
+  /* border: 1px solid red; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+#inReview1{
+  width: 7%;
+  /* border: 1px solid black; */
+}
+#inReview2{
+  width: 90%;
+  /* border: 1px solid blue; */
+  line-height: 3px;
+  padding: 10px;
+}
+#userImg{
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+#inReview2 > p{
+  font-size: 14px;
+  font-family: "Nunito",sans-serif;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.speciMobileCat{
+  /* border: 1px solid red; */
+  display: flex;
+  line-height: 10px;
+}
+
+.speciMobileCat > div{
+  /* border: 1px solid blue; */
+  width: 33%;
+}
+.speciMobDiv{
+  font-weight: 900;
+}
+
+#SpecifiBtn{
+  padding: 10px;
+  margin: 20px;
+  width: 130px;
+  border-radius: 100px;
+  border: 1px solid #54a5a2;
+  color: #54a5a2;
+  background-color: white;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+a{
+  color:#54a5a2 ;
+  font-weight: bolder;
+}
