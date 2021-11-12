@@ -173,6 +173,9 @@ function popularProd(data) {
     var img = document.createElement("img");
     img.setAttribute("id", "productImage");
     img.src = item.image_url;
+    img.addEventListener("click", function(){
+      goToItemPage(item);
+    });
     // box for product description
     var descriptionBox = document.createElement("div");
     descriptionBox.setAttribute("id", "desBox");
@@ -251,4 +254,10 @@ function addToCart(item) {
 function buyNow(item) {
   cart.push(item);
   localStorage.setItem("cartItems",JSON.stringify(cart));
+}
+
+//item page 
+function goToItemPage(item){
+  var itemData = item;
+  localStorage.setItem("itemData",JSON.stringify(itemData));
 }
