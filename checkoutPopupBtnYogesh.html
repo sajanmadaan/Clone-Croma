@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <title>Checkout Popup Button Yogesh</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="checkoutPopupBtnYogesh.css">
+
+<body>
+
+  <h2>Address Popup Page</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click on Me</button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1 style="text-align: center;">Add Address</h1>
+        <hr>
+        <label for="fullName"><b>Full name*</b></label>
+        <input type="text" placeholder="Enter Full name" name="fullName" required>
+
+        <label for="MobNumber"><b>Mobile Number*</b></label>
+        <input type="text" placeholder="Enter your mobile number" name="MobNumber" required>
+
+        <label for="addNickName"><b>Address Nick Name*</b></label>
+        <input type="text" placeholder="Enter Nick Name" name="addNickName" required>
+
+
+        <label for="pCode"><b>Pin Code*</b></label>
+        <input type="text" placeholder="Pincode" name="pCode" required>
+
+        <label for="address"><b>Address*</b></label>
+        <input type="text" placeholder="Flat no./Building Name/Society" name="address" required>
+
+
+        <input type="text" placeholder="Landmark/Locality/Area" name="address" required>
+
+        <label for="state"><b>State*</b></label>
+        <input type="text" placeholder="State" name="state" required>
+
+        <label for="city"><b>City*</b></label>
+        <input type="text" placeholder="City" name="city" required>
+
+
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Home
+          <input type="checkbox" name="remember" style="margin-bottom:15px"> Work
+          <input type="checkbox" name="remember" style="margin-bottom:15px"> Other
+        </label>
+
+
+        <p><input type="checkbox" name="remember" style="margin-bottom:15px"> Save This Address As Default</p>
+
+        <div class="clearfix">
+
+          <button type="submit" class="signupbtn">Save Address</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="checkoutPopupBtnYogesh.js"></script>
+
+</body>
+
+</html>

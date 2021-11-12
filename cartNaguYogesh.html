@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page Nagu & Yogesh</title>
+  <link rel="stylesheet" href="cartNaguYogesh.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/28e3ee16ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="headdiv" class="shadow">
+    <div>
+      <span id="headinnerspan">Your Cart &nbsp;</span>
+      <span id="qty" class="lightgrey"></span>
+      <span class="itemprice effprice">&emsp;₹</span>
+      <button class="checkout">CHECKOUT</button>
+    </div>
+  </div>
+
+  <div id="cartcont">
+    <div id="itemsdiv">
+      <div class="itemDiv1">Add button</div>
+
+      <div class="itemDiv2 flexDivY">
+        <div>
+          <h2>Billing Address</h2>
+          <form action="#">
+            <input type="checkbox" id="billCheckbox" checked="checked">
+            <label for=""> Same as Shipping address</label><br>
+        </div>
+        <div id="addDiv">ADD ADDRESS</div>
+      </div>
+
+
+      <div class="itemDiv3">
+        <div class="itemD">
+          <h2 style="padding-left: 4%;">Contact Information</h2>
+          <div class="containerFormYogi">
+            <form action="/action_page.php">
+              <label for="Title">Title</label>
+              <select id="Title" name="Title">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+              </select>
+
+
+              <label for="mname">Middle Name</label>
+              <input type="text" id="fname" name="middlename" placeholder="Enter Middle Name">
+
+
+              <label for="emailId">Email ID</label>
+              <input type="email" id="lname" name="emailid" placeholder="Enter Email ID">
+
+
+
+              <input class="checkout" type="submit" value="SAVE DETAILS">
+            </form>
+          </div>
+
+
+        </div>
+
+        <div class="itemD">
+          <div class="containerFormYogi">
+            <form action="/action_page.php">
+              <h2>&nbsp; </h2>
+
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+
+              <label for="mnumber">Mobile Number</label>
+              <input type="number" id="lname" name="mobilenumber" placeholder="Enter Mobile Number">
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="infodiv">
+
+      <div class="payinfo shadow">
+        <h1>Payment Details</h1>
+        <div class="costs">
+          <div>Item Subtotal <span class="itemprice">₹</span></div>
+          <div>Delivery charges <span>Free</span></div>
+          <div>Today’s savings <span id="savings">₹</span></div>
+          <hr />
+          <div>Total price <span id="totalprice">₹</span></div>
+        </div>
+
+        <div class="rgt lft">
+          <button class="checkout" id="checkbottom">SELECT PAYMENT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script src="cart.js"></script>
