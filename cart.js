@@ -522,6 +522,10 @@ function remove (item,index){
     document.getElementById("itemsdiv").innerHTML ="";
     cartItems.map(display);
 
+    
+var quantity = cartItems.length;
+document.getElementById("qty").innerHTML = "[&nbsp;" + quantity + "&nbsp;item(s)&nbsp;]";
+
     removeprices(item);
 }
 
@@ -539,17 +543,14 @@ var two = document.querySelector(".itemprice");
  two.innerHTML += req;
 
 
-
-
-
-
 var dummytotal = presentitemprice.Totalprice;
 dummytotal -= item.price;
 document.getElementById("totalprice").textContent = "₹" + dummytotal;
 
 var save = savecal();
 document.getElementById("savings").textContent = "₹" +  save;
-document.querySelector(".effprice").textContent = "₹" + dummytotal;
+document.querySelector(".effprice").innerHTML = "&emsp; ₹";
+document.querySelector(".effprice").innerHTML += dummytotal;
 
 paymentstore = {
 
@@ -673,6 +674,9 @@ function changeapply (){
     }
 }
 
+
+
+
 // calculation
 
 var itemprice = cartItems.reduce(function(ac, item){
@@ -689,7 +693,7 @@ two.forEach(function(item){
  item.textContent += itemprice;
 })
 
-document.querySelector(".effprice").textContent = "₹" + itemprice;
+document.querySelector(".effprice").textContent +=  itemprice;
 
 var save = savecal();
 
@@ -759,7 +763,7 @@ function checkcoupon(){
   };
   
   localStorage.setItem("paymentDetails", JSON.stringify(paymentstore));
-  document.querySelector(".effprice").innerHTML = "₹" + effprice;
+  document.querySelector(".effprice").innerHTML =  "₹" + effprice;
 }
 
 
