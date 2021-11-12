@@ -433,12 +433,12 @@ var data = [
 
 
 
-localStorage.setItem("cartItems :",JSON.stringify(data));
+localStorage.setItem("cartItems",JSON.stringify(data));
 
 
 
 
-var cartItems = JSON.parse(localStorage.getItem("cartItems :")) ||  [];
+var cartItems = JSON.parse(localStorage.getItem("cartItems")) ||  [];
 
 cartItems.map(display);
 
@@ -491,7 +491,7 @@ function display(item, index){
   
    quantityrightdiv.setAttribute("class", "floating");
    spantagrgt1.setAttribute("class", "lightgrey");
-    // oldprice.setAttribute("class", "floating");
+  
     image.setAttribute("class", "image");
     div.setAttribute("class", "prodiv");
     textdiv.setAttribute("id", "textdiv");
@@ -515,11 +515,10 @@ function display(item, index){
 
 function remove (index){
    
-    // console.log(index)
+ 
      cartItems.splice(index, 1);
-    localStorage.setItem("cartItems :", JSON.stringify(cartItems));
-    //  console.log("here")
-    //  console.log(cartItems)
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
     document.getElementById("itemsdiv").innerHTML ="";
     cartItems.map(display);
 }
@@ -557,17 +556,17 @@ function closepin(){
 
 }
 
-document.getElementById("applybtncart"),addEventListener("click", setpin);
+document.getElementById("applybtncart").addEventListener("click", setpin);
 
 function setpin (){
 
   var pinvalue = document.getElementById("pininputcart").value;
 
-  // if(pinvalue.length != 5 ){
+  if(pinvalue.length != 6 ){
 
-  //   alert("Wrong Pin");
-  //   return ;
-  // }
+    alert("Wrong Pin");
+    return ;
+  }
 
  localStorage.setItem("pincode :",JSON.stringify(pinvalue));
  
@@ -582,34 +581,52 @@ function changeapply (){
 
  
   var changediv = document.getElementById("changingdiv");
+
+  var image1 =  document.createElement("img");
+  image1.src = "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1614689510/Croma%20Assets/CMS/Category%20icon/Croma.com-icon-design_Faster-Delivery_sozfwa.png/mxw_1440,f_auto";
+  image1.setAttribute("class", "icons");
+
+  var image2 =  document.createElement("img");
+  image2.src = "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1616525040/Croma%20Assets/CMS/Category%20icon/E9EF7733-EDFB-4FC9-8ABE-B26A22C381D4_zuwywz.png/mxw_1440,f_auto" ; 
+   image2.setAttribute("class", "icons");
   
   console.log(changediv);
   
     if( pin == "533005"){
         
      var spanradio1 =  document.createElement("span");
-       spanradio1.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery";
+     
+
+       spanradio1.innerHTML = "<input type='radio'></input> &nbsp;" ;
+       spanradio1.append(image1);
+       spanradio1.innerHTML += "&emsp; Standard Delivery";
       
        changediv.innerHTML = "";
       changediv.append(spanradio1);
       
+      closepin();
       return ;
     }
 
     if( pin == "530012"){
 
-      // changediv.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery"
-      // changediv.innerHTML += "<input type='radio'></input> &nbsp Available For Pickup Croma, Vizag Muralinagar"
+      
 
       var spanradio1 =  document.createElement("span");
-      spanradio1.innerHTML = "<input type='radio'></input> &nbsp Standard Delivery";
+      spanradio1.innerHTML = "<input type='radio'></input> &nbsp;"; 
+      spanradio1.append(image1);
+      spanradio1.innerHTML += "&emsp; Standard Delivery";
 
       var spanradio2 = document.createElement("span");
-      spanradio2.innerHTML = "<input type='radio'></input> &nbsp Available For Pickup Croma, Vizag Muralinagar";
+      spanradio2.innerHTML = "<input type='radio'></input> &nbsp;";
+      spanradio2.append(image2);
+      spanradio2.innerHTML += "&emsp; Available For Pickup Croma, Vizag Muralinagar";
+      
      
       changediv.innerHTML = "";
      changediv.append(spanradio1, spanradio2);
-
+      
+     closepin();
      return ;
     }
 
@@ -634,7 +651,7 @@ var two = document.querySelectorAll(".itemprice");
 two.forEach(function(item){
  item.textContent += itemprice;
 })
-// dlfskgjdlkfjg above price is nopt correct
+
 
 var save = cartItems.reduce(function(ac, item){
 
@@ -694,4 +711,18 @@ function checkcoupon(){
   
   localStorage.setItem("paymentDetails", JSON.stringify(paymentstore));
   document.querySelector(".effprice").innerHTML = "₹" + effprice;
+}
+
+
+var checkbtns = document.getElementsByClassName("checkout");
+console.log(checkbtns)
+
+for(var i = 0; i < 2; i++){
+
+  checkbtns[i].addEventListener("click", redirect);
+}
+
+function redirect(){
+
+   window.location.href = "checkout.html";
 }
