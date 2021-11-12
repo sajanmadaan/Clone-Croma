@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .item_container {
     width: 80%;
@@ -10,6 +9,7 @@
     height: 550px;
     margin: auto;
     display: flex;
+    font-size: 12px;
     /* gap: 30px; */
 }
 /* topmost list */
@@ -293,3 +293,5 @@
   #buyNow {
       background-color: #ffb900;
   }
+
+  
