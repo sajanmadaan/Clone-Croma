@@ -429,7 +429,7 @@
     },   
 ];
 var item = data[0];
-console.log(item);
+// console.log(item);
 var nam = document.getElementById("nam");
 nam.textContent = item.name;
 var prod_id = document.getElementById("prod_id");
@@ -438,4 +438,25 @@ var price = document.getElementById("payable");
 price.innerHTML = `<span>&#8377;${item.price}<\span>`;
 var realPrice = document.getElementById("mrp");
 realPrice.innerHTML = `<span>${item.realPrice}<\span>`;
+var list_name = document.getElementById("list_name");
+list_name.textContent = item.name;
+
+var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+var cartbtn = document.getElementById("addToCart");
+cartbtn.addEventListener("click", function() {
+  addToCart(item);
+});
+function addToCart(item) {
+  cart.push(item);
+  localStorage.setItem("cartItems", JSON.stringify(cart));
+}
+
+var buyNow = document.getElementById("buyNow");
+buyNow.addEventListener("click", function() {
+  addToCart(item);
+  window.location.href = "cart.html";
+});
+
+
 

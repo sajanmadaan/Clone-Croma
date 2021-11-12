@@ -4,26 +4,91 @@
     font-family: sans-serif;
     font-size: 12px;
 }
-body {
-    height: 2000px;
-}
 .item_container {
     width: 80%;
     /* border: 2px solid black; */
-    height: 600px;
+    height: 550px;
     margin: auto;
     display: flex;
-    gap: 50px;
+    /* gap: 30px; */
 }
+/* topmost list */
+.item_header {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.item_header ul.list {
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0px;
+    
+}
+.item_header li.list_item {
+    display: inline;
+    color: #666;
+}
+/* ------ad------ */
+#ad {
+  text-align: center;
+  margin: 25px 0;
+}
+/* ---------------left--------------- */
 .left {
-    width: 44%;
+    width: 50%;
     height: 100%;
-    border: 1px solid gray;
+    display: flex;
+    gap: px;
 }
+.left_left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.left_flex_item {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.left_flex_item:hover, .left_flex_item:nth-child(2) {
+    border: 1px solid teal;
+}
+.left_left button {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(14, 30, 37, 0.1) 0px 1px 2px 0px, rgba(14, 30, 37, 0.1) 0px 1px 8px 0px;
+    margin: 10px auto;
+    background-color: white;
+}
+.left_right {
+    width: 78%;
+} 
+.left img {
+    width: 100%;
+    object-fit: cover;  
+}
+.left_right img {
+    height: 87%;
+} 
+.left_right_bottom {
+    padding: 30px 5px;
+    margin: 0 30px;
+    border-top :1px solid lightgray;
+    border-bottom :1px solid lightgray;
+}
+.left_right_bottom span{
+    margin-left: 05px;
+    color: teal;
+    font-weight: 600;
+}
+
 
 /* -----------right----------- */
 .right {
-    width: 56%;
+    width: 50%;
     height: 100%;
     /* border: 1px solid greenyellow; */
     overflow-y: auto;
@@ -117,7 +182,7 @@ body {
 
 /* ---right third--- */
 #right_third {
-    padding: 30px 0 30px 15px;
+    padding: 30px 0 40px 15px;
     background-color: whitesmoke;
     border-radius: 10px;
     margin: 35px 0;
@@ -217,6 +282,9 @@ body {
     border: none;
     font-size: 16px;
     font-weight: bold;
+  }
+  #rb_content button:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
   #addToCart {
       background-color: #005652;
