@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Croma Cart Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p>Payments</p>
+    <div class="frame">
+      <div class="container">
+        <button class="accordion">Gift Card/Voucher</button>
+        <div class="panel">
+          <p>Choose Gift Card/Voucher</p>
+          <ul>
+            <select name="card" id="voucher" class="select">
+              <option value="select">Select</option>
+              <option value="select">Gift Card</option>
+              <option value="select">Voucher</option>
+            </select>
+          </ul>
+        </div>
+        <button class="accordion">Payment</button>
+        <div class="panel">
+          <!-- <p>Payment</p> -->
+          <!-- <ul>
+            <select name="card" id="voucher" class="select">
+              <option value="select">Select</option>
+              <option value="select">Gift Card</option>
+              <option value="select">Voucher</option>
+            </select>
+          </ul> -->
+          <div class="drp">
+            <div class="option">
+              <a href="#"> Credit/Debit Cards </a><br />
+              <a href="#"> No Cost EMI </a><br /><a href="#"> EMI </a><br /><a
+                href="#"
+              >
+                UPI </a
+              ><br /><a href="#"> Netbanking </a><br /><a href="#"> Wallet </a>
+            </div>
+            <div class="input">
+              <h4>Enter Debit/Credit Card Details</h4>
+              <p>Card Number</p>
+              <input type="text" placeholder="Enter Card Number" />
+              <p>Expiry</p>
+              <input type="text" placeholder="Expiry" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-box">
+        <h2>Payment Details</h2>
+        <div style="text-align: left; margin-left: 30px">
+          <div class="det">
+            <div class="details">
+              <p>Amount Payable</p>
+              <p>Delievery Charge</p>
+              <p>Today's Savings</p>
+              <hr />
+              <p style="font-weight: bolder">Net Amount</p>
+            </div>
+            <div class="price">
+              <p class="bld">Rs 270000</p>
+              <p class="bld">Free</p>
+              <p class="bld">RS 3000</p>
+              <hr />
+              <p class="bld">Rs 24,490</p>
+            </div>
+          </div>
+          <button class="butn">
+            <a href="#" class="anchor"> View All Offers</a>
+          </button>
+        </div>
+        <div class="offer">
+          <p
+            style="
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+            "
+          >
+            OFFER APPLIED
+          </p>
+          <p>Buy & Get Rs.3000 off (Discount auto applied in cart)</p>
+        </div>
+        <div class="offer">
+          <p>
+            By placing the order you have read & agreed to
+            <a href="#" style="text-decoration: none">Terms and condition</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="Drop.js"></script>
+  </body>
+</html>
