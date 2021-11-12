@@ -503,7 +503,7 @@ function display(item, index){
     div.append(deletebtn);
 
     deletebtn.addEventListener("click",function(){
-         remove(index);
+         remove(item,index);
     });
     
 }
@@ -513,7 +513,7 @@ function display(item, index){
 
 
 
-function remove (index){
+function remove (item,index){
    
  
      cartItems.splice(index, 1);
@@ -521,9 +521,46 @@ function remove (index){
 
     document.getElementById("itemsdiv").innerHTML ="";
     cartItems.map(display);
+
+    removeprices(item);
 }
 
+function removeprices(item){
+   
+  var presentitemprice = JSON.parse(localStorage.getItem("paymentDetails"));
+ var req = presentitemprice.Itemtotal  ;
+ console.log(req)
+   req -= item.price;
 
+var two = document.querySelector(".itemprice");
+
+
+ two.innerHTML = "&emsp; ₹"  ;
+ two.innerHTML += req;
+
+
+
+
+
+
+var dummytotal = presentitemprice.Totalprice;
+dummytotal -= item.price;
+document.getElementById("totalprice").textContent = "₹" + dummytotal;
+
+var save = savecal();
+document.getElementById("savings").textContent = "₹" +  save;
+document.querySelector(".effprice").textContent = "₹" + dummytotal;
+
+paymentstore = {
+
+  Itemtotal : req,
+  Deliverycharge : 0,
+  Totalprice : dummytotal,
+};
+
+localStorage.setItem("paymentDetails", JSON.stringify(paymentstore) );
+
+}
 
 
   // for opening and closing
@@ -652,8 +689,13 @@ two.forEach(function(item){
  item.textContent += itemprice;
 })
 
+document.querySelector(".effprice").textContent = "₹" + itemprice;
 
-var save = cartItems.reduce(function(ac, item){
+var save = savecal();
+
+function savecal(){
+
+  var saveinner = cartItems.reduce(function(ac, item){
 
   var diff ;
   
@@ -667,10 +709,16 @@ var save = cartItems.reduce(function(ac, item){
   return ac + diff;
 },0);
 
+return saveinner;
+}
+
+
+
 var payvalue = itemprice;
 document.getElementById("totalprice").textContent += payvalue;
 
 document.getElementById("savings").textContent += save;
+
 
 
 
@@ -707,6 +755,7 @@ function checkcoupon(){
     Itemtotal : itemprice,
     Deliverycharge : 0,
     Totalprice : effprice,
+  
   };
   
   localStorage.setItem("paymentDetails", JSON.stringify(paymentstore));
