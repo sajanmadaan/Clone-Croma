@@ -75,7 +75,7 @@ data = [
     image_url:
       "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1622813035/Croma%20Assets/Communication/Mobiles/Images/234468_ntlstl.png/mxw_2048,f_auto",
     price: 16990,
-    orginal_price: 18990,
+    realPrice: 18990,
     discount: "11% Off",
     rating: "4.5",
   },
