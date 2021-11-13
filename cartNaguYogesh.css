@@ -1,6 +1,6 @@
-body {
+/* body {
   background-color: white;
-}
+} */
 
 #cartcont {
   width: 90%;
@@ -29,7 +29,7 @@ body {
 }
 
 #itemsdiv {
-  width: 65%;
+  width: 60%;
   border: 1px solid green;
 }
 
