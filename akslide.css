@@ -1,0 +1,199 @@
+div span {
+    font-weight: bolder;
+    font-size: larger;
+    font-family:"Nunito",sans-serif;
+  }
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Nunito",sans-serif;
+  }
+  #slider1,#slider2,#slider3,#slider4,#slider5,#slider6,#slider7,#slider8 {
+    display: flex;
+    /* border: 3px solid rgb(128, 0, 64); */
+  }
+  .slider {
+    overflow: hidden;
+    /* border: 2px solid rgb(40, 207, 82); */
+    margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 245px;
+    height: 80%;
+    padding-top:30px;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    transform: translateX(20%);
+    transition: 1s;
+  }
+  .image img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255)
+  }
+  .product-name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    font-family:"Nunito",sans-serif;
+    text-align: left;
+  }
+  .product-name a {
+    color: rgb(5, 14, 2);
+    font-weight: bolder;
+  }
+
+  .container {
+    height: fit-content;
+    display: flex;
+    height: 450px;
+    width: 83.5%;
+    /* width: 62%; */
+    /* padding: 10px; */
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #arrow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  .image {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+  }
+  #arrow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #arow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #arow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #arrw{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #arrw1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #arro{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #arro1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #rrow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #rrow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #abrrow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #abrrow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #acrrow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #acrrow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }
+  #adrrow{ 
+    margin-left: 1260px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-280px);
+  }
+  #adrrow1 {
+    margin-left: 70px;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(200px);
+  }

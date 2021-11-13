@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    
+}
+.hamburger{
+    display: inline-block;
+    cursor: pointer;
+    background-color:black;
+}
+  
+.bar1, .bar2, .bar3 {
+width: 30px;
+height: 5px;
+background-color: rgb(255, 255, 255);
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .bar1 {
+transform: rotate(-45deg) translate(-9px, 6px);
+
+}
+
+.change .bar2 {
+    opacity: 0;
+    
+}
+
+.change .bar3 {
+transform: rotate(45deg) translate(-8px, -8px);
+
+}
+.navbar{
+    background-color: black;
+    list-style-type: none;
+}
+.navbar ul{
+    overflow: auto;
+    margin-left: 30px;
+}
+
+.navbar li{
+    float: left;
+    list-style:none;
+    margin: 20px 0px 8px 10px ;
+}
+.navbar li a{
+    padding:15px 0px 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito",sans-serif;
+    margin-left: 10px;
+
+}
+.navbar .fa{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search{
+    float: left;
+    color: white;
+    padding: 20px;
+}
+#Searchbox{
+    padding-left: 20px;
+    width:500px;
+    height: 35px;
+    font-size: 18px;
+    font-family: "Nunito",sans-serif;
+    color: #fff;;
+}
+#bor{
+    background-color: #ffb900;
+    height: 35px;
+    width:50px;
+    float: right;
+    margin-top: 1px;
+}
+.snav{
+    float: left;
+    height:70px;
+    padding:20px;
+}
+.sub-menu{
+    display: none;
+}
+.navbar ul li.active .sub-menu{ 
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 22px;
+    margin-left:0px;
+    z-index:1;
+}
+.navbar ul .active .sub-menu ul{ 
+    display: block;
+    margin: 0px 10px 0px 10px;
+    width:330px;
+    height: 600px;
+    z-index:1;
+}
+
+.navbar ul .active .sub-menu li a{ 
+    color: black;
+    z-index:1;
+    font-size: 17px;
+}
+.fa-angle-right{
+    float: right;
+    color: #666;
+}
+h1{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    font-family: "Nunito",sans-serif;
+    font-weight: 700;
+}
+.navbar ul li:hover .sub-menu li a:hover{
+    color: teal;
+}
+
+.category{
+    display: none;
+}
+.hoverme{
+    width:300px;
+    /* border:2px solid red; */
+}
+.hoverme:hover{
+  background-color: rgb(236, 253, 253);
+}
+.hoverme:hover a{
+    color: rgb(6, 53, 53);
+  }
+.hoverme:hover .category{
+    display:block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-left: 340px;  
+    top:0;
+    left:0;
+}
+.hoverme:hover .category li a{
+    color: black;
+  
+}
+.category ul {
+
+    width:100%;
+    font-size: 16px;
+}
+.category li {
+
+    width:90%;
+
+}
+.cross,.fa-times{
+    float: right;
+}
+

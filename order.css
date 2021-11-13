@@ -1,0 +1,38 @@
+.container{
+    margin: auto;
+    margin-top: 100px;
+    height: 500px;
+    width:40%;
+    text-align: center;
+}
+h1{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-family: "PT Serif",serif;
+    font-weight: 400;
+    color: #333;
+}
+h4{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: inherit;
+    margin-bottom: 40px;
+}
+img{
+    text-align: center;
+
+}
+.ybox a{
+    text-decoration: none;
+    color: black;
+}
+.ybox{
+    background-color: #ffb900;
+    border-radius: 20px;
+    height: 50px;
+    width:300px;
+    padding-top: 20px;
+    margin: auto;
+    
+}

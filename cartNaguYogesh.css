@@ -1,0 +1,289 @@
+#cartcont {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  height: 300px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#headdiv {
+  width: 80%;
+  height: 0px;
+  margin: auto;
+  border-radius: 7px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#headdiv > div {
+  transform: translateY(50%);
+  font-size: 26px;
+}
+
+#itemsdiv {
+  width: 60%;
+
+}
+
+#infodiv {
+  width: 33.3%;
+
+  margin-left: 16px;
+}
+
+.payinfo {
+
+  height: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.payinfo h1 {
+  font-family: initial;
+  font-weight: lighter;
+}
+
+.costs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+
+.costs > div {
+  margin-top: 10px;
+}
+.costs span {
+  float: right;
+}
+
+.costs hr {
+  width: 100%;
+}
+.lft {
+  width: 100%;
+  display: inline-block;
+  
+  height: 0px;
+  vertical-align: middle;
+  margin-top: 0px;
+}
+
+.rgt {
+  text-align: center;
+  align-content: center;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3%;
+}
+
+.prodiv {
+  display: flex;
+  margin-top: 20px;
+  padding: 15px;
+  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+
+.image {
+  width: 150px;
+}
+
+.floating {
+  float: right;
+}
+
+#textdiv h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#textdiv > div:nth-child(2) {
+
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+
+.oldprice {
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.prodiv > button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  color: teal;
+}
+
+#cartcoupon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 60px;
+  padding: 20px;
+ 
+  border-radius: 8px;
+}
+
+#cartcoupon > div {
+  width: 90%;
+  background-color: whitesmoke;
+  height: 40px;
+  display: flex;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+#cartcoupon input {
+  flex-basis: 80%;
+}
+
+#cartcoupon button {
+  color: teal;
+  font-weight: bold;
+}
+
+.back {
+  background-color: transparent;
+  border: 0;
+}
+
+#checbottom {
+  height: 40px;
+  background-color: #ffb900;
+  border-radius: 19px;
+  width: 160px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  border: 0;
+  color: #234531;
+  margin-left: 10%;
+}
+
+#checkbottom {
+  margin-top: 10%;
+  margin-left: auto;
+}
+
+.lightgrey {
+  color: #686464;
+  font-size: 14px;
+}
+
+.effprice {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.oldprice {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#deliveryincart {
+  padding: 15px;
+  font-family: initial;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: whitesmoke;
+}
+
+#popinbtn {
+  color: teal;
+  float: right;
+}
+
+#changingdiv {
+  margin-top: 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.itemDiv1 {
+  height: 150px;
+  color: #49a5b7;
+  margin: 5px;
+}
+.itemDiv2 {
+  height: 130px;
+  display: flex;
+}
+.itemDiv3 {
+  height: 430px;
+  display: flex;
+}
+
+.itemD {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+
+.flexDivY > div {
+  /* border: 1px solid blue; */
+  width: 50%;
+  padding: 14px;
+}
+
+#addDiv {
+  padding-top: 38px;
+  color: #49a5b7;
+}
+
+/* contact form's CSS Start here */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #f6f6f6;
+}
+
+input[type="submit"] {
+  margin: 9% 0% 0% 84%;
+}
+
+input[type="submit"]:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+
+.containerFormYogi {
+  border-radius: 5px;
+  padding: 20px;
+}
+.addAddressBtn {
+  height: 40px;
+  width: 200px;
+  border-radius: 30px;
+}
+#addressBtnDiv{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: center;
+}

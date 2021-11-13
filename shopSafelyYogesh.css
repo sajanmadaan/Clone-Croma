@@ -1,0 +1,56 @@
+#safety {
+    font-weight: inherit;
+    text-align: center;
+    font-family: "PT Serif",serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  .shopsafeafter {
+    display: flex;
+    width: 75%;
+    /* border: 1px solid blue; */
+    height: 150px;
+    margin: auto;
+  }
+  
+  .safeBox {
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 100%;
+    display: flex;
+  }
+  .imgBox > .yogim{
+    height: 70%;
+    width: 100%;
+  }
+  
+  .imgBox {
+    /* border: 1px solid black; */
+    width: 33%;
+    height: 100%;
+  }
+  
+  .textBox {
+    /* border: 1px solid green; */
+    /* width: 55%; */
+    text-align: left;
+    padding-top: 10%;
+  }
+  
+  .ptagcolor {
+    display: block;
+    font-size: 17px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #005652;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .uppertag{
+    color: black;
+    font-weight: bold;
+    font-family: "Nunito",sans-serif;
+    font-size: 16px;
+  }

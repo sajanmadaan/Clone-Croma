@@ -1,0 +1,60 @@
+.slideShowContainer {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .mySlides {
+    width: 100%;
+    display: none;
+  }
+  .mySlides img {
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    width: auto;
+    padding: 15px;
+    margin-top:0px;
+    color: gray;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* dots indicaor  */
+  .dotsDiv {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:-20px;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    opacity: 0.7;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    
+  }
+  .active{
+      background-color: white;
+      opacity: 1;
+  }

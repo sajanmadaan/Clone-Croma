@@ -1,0 +1,59 @@
+.Highlights{
+    font-weight: 100;
+    margin: 10px 0px 20px 12px;
+    font-family: "PT Serif",serif;
+    font-size: 2rem;
+    color: #333;
+    margin-left:140px;
+}
+.threebox {
+display: flex;
+/* border: 1px solid red; */
+height: 300px;
+width:85%;
+margin-left:100px;
+}
+
+.box {
+/* border: 1px solid red; */
+margin-left:30px;
+height: 100%;
+cursor: pointer;
+}
+.box img {
+height: 100%;
+width: 100%;
+border-radius: 20px;
+}
+.afterShop{
+display: flex;
+height: 400px;
+/* border: 1px solid red; */
+}
+
+.safeShop{
+
+display: flex;
+height: 100px;
+width: 70%;
+margin: auto;
+}
+
+.safeShop > div{
+width: 30%;
+height: 100% ;
+margin: auto;
+}
+
+.afterShop > div{
+width: 49%;
+height: 100%;
+/* border: 1px solid blue; */
+margin: auto;
+}
+
+.afterShop img{
+height: 100%;
+width: 100%;
+cursor: pointer;
+}

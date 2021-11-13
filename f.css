@@ -1,0 +1,234 @@
+
+.phone_container {
+    width: 75%;
+    margin: auto;
+}
+ul.list {
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0px;
+    font-size: 16px;
+    
+}
+li.list_item {
+    display: inline;
+    color: #666;
+}
+li.list_item:last-child {
+    color: black;
+}
+
+.section_heading {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: #333;
+    font-family: "PT Serif",serif;
+    margin: 20px auto 30px auto;
+}
+.category {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.category_item {
+    width: 24%;
+}
+.category_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.advantages {
+    display: flex;
+    column-gap: 10px;
+}
+.advantages_item {
+    width: 25%;
+}
+.advantages_item img {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    column-gap: 24px;
+    width: 74%;
+}
+
+.banner_item img {
+    width: 100%;
+}
+.banner_full img {
+    width: 100%;
+}
+.banner_video {
+    display: flex;
+    column-gap: 24px;
+}
+.banner_video_item {
+    width: 49%;
+}
+.banner_video iframe {
+    width: 100%;
+}
+.feature {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.feature_item {
+    width: 24%;
+    
+}
+.feature_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+.brand2 {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.brand2_item {
+    width: 24%;
+    
+}
+.brand2_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+/* ********************Slider************************** */
+.myslides {
+    display: none;
+}
+.myslides>img {
+    vertical-align: middle;
+}
+.product_slideshow_container {
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 1.5%;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease-in;
+    border-radius: 50%;
+    /* user-select: none; */
+    text-align: center;
+    background-color: hsla(0,0%,100%,.2);
+}
+.next {  
+    right: 2px;  
+}  
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transform: translateY(-300%);
+}  
+.active{
+   background-color: #fff;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* *********************Text*************************** */
+.bottom_text .btext{
+    margin-top: 5px;
+    font-size: 13px;
+}
+.gray_head {
+    color: gray;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* ********************Footer************************** */
+body {
+    position: relative;
+}
+#content {
+    height: 100%;
+}
+.foo {
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.foo>.foo_item {
+    border-right: 2px solid white;
+    width: 29%;
+    height: 320px;
+}
+.foo>.last {
+    border: none;
+}
+.foo_input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#foo_email {
+    padding: 16px 44px 16px 22px;
+    border: none;
+    border-radius: 10px;
+}
+#foo_email:focus {
+    outline: none;
+} 
+.email_btn {
+    border: none;
+    padding: 14px 20px;
+    background-color: white;
+    border-radius: 10px;
+    background-color:(0, 0, 0, 0.1);
+}
+.contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+
+.foo_item>p {
+    margin-right:30%;
+}
+.foo>h3 {
+    vertical-align: top;
+}
+.foo_item_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-column-gap: 8%;
+    grid-row-gap: 15px;
+    height: 28px;
+}
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+}
+.foo_item_div>div>a:hover {
+    color: teal;
+}

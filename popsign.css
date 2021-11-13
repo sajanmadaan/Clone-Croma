@@ -1,0 +1,140 @@
+
+.signoutdiv{
+    width: 650px;
+    height: 500px;
+    top:0;
+    margin-left: 300px;
+}
+
+#signbox{
+    width: 100%;
+    height: 500px;
+    
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+#signcross{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#signcross div{
+    width: 25px;
+    height: 2px;
+    background-color: white; 
+    
+}
+
+#signcross > div{
+  transform: rotate(45deg);
+}
+
+#signcross div > div{
+   
+   transform: rotate(90deg);
+  }
+
+#signtextcont{
+    text-align: center;
+    margin-left: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+   width: 90%;
+   height: 90%;
+   padding-top: 50px;
+   border-radius: 20px;
+}
+
+#signtextcont > h1{
+    margin-top: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 4;
+    font-size: 25px;
+}
+
+.signmail{
+
+    width: 97%;
+    height: 40px;
+    font-size: 19px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    
+
+}#tp{
+
+    line-height: 20px;
+    width: 230px;
+    background-color: #ffb900;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+#op{
+
+    line-height: 20px;
+    width: 230px;
+    background-color: #ffb900;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+#otp{
+
+    line-height: 20px;
+    width: 230px;
+    background-color: #ffb900;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+#otp:active{
+    transform: scale(0.9);
+}
+
+/* #signtextcont > input[type=checkbox]{
+  color: teal;
+}
+.checkbox{
+    background-color: teal;
+    
+} */
+
+#signtextcont > label{
+
+    font-size: 14px;
+}
+
+
+.signp{
+
+    line-height: 65px;
+    
+}
+
+#signupbtn{
+    color: teal;
+    text-decoration: none;
+    border: 0;
+    background-color: white;
+    font-size: 15px;    
+}
+
+.signlf{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;        
+}

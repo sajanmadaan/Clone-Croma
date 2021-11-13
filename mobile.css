@@ -1,0 +1,240 @@
+.phone_container {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+ul.list {
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0px;
+    
+}
+li.list_item {
+    display: inline;
+    color: #666;
+}
+li.list_item:last-child {
+    color: black;
+}
+
+.section_heading {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    font-family: "PT Serif",serif;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: inherit;
+}
+.phone_containercategory {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    width:80%;
+    margin-bottom: 30px;
+    margin-left: 140px;
+}
+.category_item {
+    width: 24%;
+    
+}
+.category_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.phone_containeradvantages{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    width:90%;
+    margin-left: 80px;
+}
+.advantagesitem .rat {
+    height: 100%;
+    width: 100%;
+}
+.bannerphone_container{
+    display: flex;
+    column-gap: 24px;
+    width: 90%;
+    margin-left:5.5%;
+
+}
+
+.banner_item img {
+    width: 100%;
+}
+.banner_fullphone_container{
+    width: 90%;
+    margin-left:5.5%;
+}
+.banner_fullphone_container .cat{
+    width: 100%;
+}
+.banner_videophone_container{
+    display: flex;
+    column-gap: 24px;
+    width: 90%;
+    margin-left:5.5%;
+}
+.banner_videophone_container .vi {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    column-gap: 24px;
+    width: 74%;
+}
+
+.banner_item img {
+    width: 100%;
+}
+.banner_full img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner_video {
+    display: flex;
+    column-gap: 24px;
+}
+.banner_video_item {
+    width: 49%;
+}
+.banner_video iframe {
+    width: 100%;
+}
+.feature {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.feature_item {
+    width: 24%;
+    
+}
+.feature_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+.brand2 {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.brand2_item {
+    width: 24%;
+    
+}
+.brand2_item img {
+    border-radius: 10px;
+    width: 100%;
+}
+/* ********************Slider************************** */
+.myslidesfade {
+    display: none;
+}
+.myslidesfade>img {
+    vertical-align: middle;
+}
+.product_slideshow {
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 1.5%;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease-in;
+    border-radius: 50%;
+    /* user-select: none; */
+    text-align: center;
+    background-color: hsla(0,0%,100%,.2);
+}
+.next {  
+    right: 2px;  
+}  
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transform: translateY(-300%);
+}  
+.active{
+   background-color: #fff;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* *********************Text*************************** */
+.bottom_text .btext{
+    margin-top: 5px;
+    font-size: 13px;
+}
+.gray_head {
+    color: gray;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+#topslid {
+    height: 180px;
+    display: flex;
+    width:80%;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Nunito", sans-serif;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .list_item{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: grey;
+  }
+  
+  #abov {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #slideto {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    transition: 1s;
+  }
+  
+  #slideto #unli {
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+  }
+ 
+  #slideto .lil .kslid { 
+    height: 100%;
+    width:100%;
+    gap:20px;
+  }
+  
