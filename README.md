@@ -11,7 +11,7 @@
 ---
 ## Our Team Members ❤️
 
- **[SAJAN MADAAN](https://github.com/sajanmadaan)**
+- **[SAJAN MADAAN](https://github.com/sajanmadaan)**
 - **[ANSHUL SHARMA](https://github.com/anshul160196)**
 - **[KUNDAN PRASAD](https://github.com/KundanPrasad11)**
 - **[NAGENDRA MURLIDHAR](https://github.com/nag-murali)**
